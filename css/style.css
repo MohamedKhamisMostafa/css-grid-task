@@ -1,0 +1,22 @@
+.parent{
+    background-color:white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,100px);
+    gap: 10px;
+    text-align: center;
+}
+.parent div{
+    text-align: center; 
+    font-size:50px;
+    color: gray;
+    font-weight: 900 ; 
+}
+.header , .footer{
+    grid-column: 1/-1;
+    background-color: rgb(15, 15, 251);
+}
+.nav , .main , .sidebar{
+    grid-row: 2/4 ;
+    background-color: aqua;
+}
